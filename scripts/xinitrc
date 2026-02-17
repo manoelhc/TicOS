@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# X11 initialization script for TicOS
+# Minimal configuration to run only Remmina or xterm
+
+# Disable screen blanking and power management
+xset s off
+xset -dpms
+xset s noblank
+
+# Hide mouse cursor after 1 second of inactivity
+unclutter -idle 1 -root &
+
+# Set a simple black background
+xsetroot -solid black
+
+# Launch the TicOS startup script which handles network detection
+# and application launching
+exec /usr/local/bin/ticos-startup.sh
