@@ -2,6 +2,13 @@
 
 **TicOS** (Thin Client Operating System) is a minimal Linux distribution built specifically for Raspberry Pi 5 that boots directly into Remmina, a remote desktop client. It's designed as a dedicated thin client solution with automatic network detection and minimal resource usage.
 
+## 📚 Documentation
+
+- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 steps
+- **[Troubleshooting](TROUBLESHOOTING.md)** - Solutions to common problems
+- **[Security Guide](SECURITY.md)** - Security best practices and hardening
+- **[Examples](examples/)** - Sample Remmina connection files
+
 ## Features
 
 - **Minimal Footprint**: Based on Raspberry Pi OS Lite with only essential packages
@@ -167,6 +174,10 @@ xrandr --output HDMI-1 --mode 1920x1080
 
 ## Troubleshooting
 
+For detailed troubleshooting information, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
+Common issues:
+
 ### Build Issues
 
 **Problem**: Packer fails to download the base image
@@ -188,10 +199,15 @@ xrandr --output HDMI-1 --mode 1920x1080
 
 ## Security Considerations
 
+⚠️ **Important**: Review the [SECURITY.md](SECURITY.md) document before deploying to production.
+
+Key security points:
 - Default username/password is `pi`/`raspberry` - **change this for production use**
-- No firewall is enabled by default
 - SSH is enabled by default in Raspberry Pi OS Lite
+- No firewall is enabled by default
 - Consider disabling SSH if not needed: `sudo systemctl disable ssh`
+
+For detailed security recommendations, see [SECURITY.md](SECURITY.md).
 
 ## Contributing
 
