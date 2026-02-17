@@ -1,0 +1,22 @@
+# Build artifacts and temporary files
+*.img
+*.img.xz
+*.log
+packer_cache/
+output-*/
+crash.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup

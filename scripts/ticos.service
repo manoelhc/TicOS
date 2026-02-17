@@ -1,0 +1,17 @@
+[Unit]
+Description=TicOS Auto-start Service
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/usr/bin/startx /home/pi/.xinitrc -- :0 vt1
+Restart=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

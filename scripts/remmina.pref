@@ -1,0 +1,31 @@
+# TicOS Configuration
+# Place this file in /home/pi/.config/remmina/ for custom Remmina settings
+
+[remmina]
+# Kiosk mode settings
+window_maximize=true
+hide_toolbar=true
+hide_statusbar=true
+fullscreen_toolbar_visibility=0
+grab_keyboard=true
+keyboard_grab=true
+
+# Security settings
+disable_tray_icon=true
+small_toolbutton=false
+applet_new_ontop=false
+applet_hide_count=false
+default_action=0
+scale_quality=3
+ssh_enabled=false
+save_view_mode=true
+show_quick_search=false
+
+# SSH tunnel settings (disabled by default for security)
+ssh_loglevel=0
+
+# View mode (0 = scrolled window, 1 = viewport fullscreen, 2 = full screen)
+view_mode=2
+
+# Prevent accidental exit
+main_welcome_version=

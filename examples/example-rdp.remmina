@@ -1,0 +1,26 @@
+[remmina]
+name=Example RDP Server
+protocol=RDP
+server=192.168.1.100:3389
+username=administrator
+password=.
+domain=
+resolution_mode=2
+color_depth=32
+sound=off
+console=false
+quality=9
+disableclipboard=false
+disableserverbackground=false
+disableserverinput=false
+disabletheming=false
+disablewallpaper=false
+showcursor=false
+viewmode=4
+window_maximize=true
+window_width=1920
+window_height=1080
+scale=true
+ssh_enabled=false
+ssh_server=
+ssh_username=

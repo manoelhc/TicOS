@@ -1,0 +1,17 @@
+[remmina]
+name=Example VNC Server
+protocol=VNC
+server=192.168.1.200:5900
+username=
+password=.
+quality=9
+colordepth=32
+showcursor=false
+viewmode=4
+disableencryption=false
+disableserverinput=false
+window_maximize=true
+window_width=1920
+window_height=1080
+scale=true
+ssh_enabled=false
