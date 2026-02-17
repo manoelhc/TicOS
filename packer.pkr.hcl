@@ -18,11 +18,11 @@ variable "image_checksum" {
 }
 
 source "arm-image" "raspberry_pi_5" {
-  iso_url              = var.raspberry_pi_os_url
-  iso_checksum         = var.image_checksum
-  output_filename      = "ticos-rpi5.img"
-  target_image_size    = 4294967296 # 4GB
-  qemu_binary          = "qemu-aarch64-static"
+  iso_url           = var.raspberry_pi_os_url
+  iso_checksum      = var.image_checksum
+  output_filename   = "ticos-rpi5.img"
+  target_image_size = 4294967296 # 4GB
+  qemu_binary       = "qemu-aarch64-static"
 }
 
 build {
